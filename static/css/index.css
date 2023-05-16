@@ -1,0 +1,14 @@
+.arrows_img {
+    border-radius: 15px;
+    max-width: 55vw;
+    max-height: 45vh;
+    filter: blur(2px);
+}
+
+.image_right_text {
+    margin-right: 11vw;
+    width: 90vw;
+    border-radius: 15px;
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

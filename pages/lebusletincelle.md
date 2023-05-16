@@ -1,0 +1,27 @@
+# LE BUS L’ETINCELLE
+
+C’est durant sa semaine de la citoyenneté que le lycée Vincent van Gogh a reçu de nombreux intervenant venus pour sensibiliser les élèves et professeurs sur de nombreux sujets. Parmi eux, l’association du Bus L’Etincelle a pu intervenir auprès des classes sur le sujet des violences sexuelles. Cette association est une association publique d’écoute pour les personnes victimes de violences sexuelles. Elle a la particularité de posséder des bureaux mobiles et ont placés leurs salle d’écoute à l’intérieur d’un véhicule adapté, ce qui valorise l’aide aux victimes qui n’ont pas toujours la possibilité de se déplacer loin de leurs foyer.
+
+img:[static/assets/img/lebusletincelle.jpg]{Façade extérieure du Bus L’Etincelle}
+img:[static/assets/img/lebusletincelle2.jpg]{Intérieur du Bus L’Etincelle}
+
+L’intervention s’est ainsi déroulée dans l’amphithéâtre de l’établissement. Durant l’intervention, les 3 intervenants Claire, François et Sébastien ont pu échanger avec les élèves présents. L’intervention a abordé le thème de la violence sexuelle, des violences administratives, du rapport de l’enfants aux violences etc.
+
+img:[static/assets/img/laclasse.jpg]{Intervention dans l’amphithéâtre du lycée Vincent Van Gogh}
+img:[static/assets/img/violence_conjuguale.jpg]{Présentation du cycle de la violence conjugale}
+
+À la suite de l'intervention nous avons interviewé Sébastien Garnier, l’un des trois travailleurs sociaux. Il a rejoint l’équipe du projet en mai 2022, sur la fin de création du projet. Il était à l'époque en reconversion professionnelle (Il était à la base juriste de formation et préparait le concours de police). Son rôle est de recevoir des femmes en entretien et d’être parfois leurs première écoute
+
+## Quel a été votre ressenti par rapport à votre intervention ici ?
+
+On voit qu'en tout cas, notre intervention a suscité pas mal de réactions dans la salle ! C'est bien parce que je pars du principe que si on a quand même deux ou trois élèves qui posent des questions, on a sensibilisé au moins deux à trois personnes. Pour moi, c'est toujours ça de pris. Et même pour certains, peut-être que forcément, ils ne participaient pas, mais j'ai quand même l'espoir que ça ait eu un petit écho de résonance dans leur esprit et qu'ils ressortent avec quelque chose de cette intervention.
+
+## Vous avez dit que vous ne prenez pas en charge les mineurs. Dans le cas où un enfant viendrait vous voir vous pouvez le prendre un minimum en charge ou est-ce que vous allez le rediriger vers un autre centre ?
+
+Je pense qu'à ce moment-là, on va peut-être le rediriger vers un autre professionnel habilité aux mineurs, puisqu’aujourd’hui, il y a y a des formations spécifiques pour l'écoute des mineurs. Il y a des mots qu'on ne peut pas utiliser quand l'enfant est vraiment tout petit, notamment en matière de violences sexuelles. Généralement, on va plus orienter vers des partenaires qui, justement, sont formés à ces situations-là. Nous, on peut recevoir la personne une fois qu'elle est majeure à l'étincelle, même si les faits ont eu lieu pendant la Minorité de la personne
+
+## Est-ce que parfois, votre métier est vraiment dur ou le fait que vous puissiez aider des gens surpasse clairement le fait que ce soit dur mentalement ?
+
+Nous, l'avantage qu'on a à l'étincelle, c'est qu'on est une équipe de trois. Quand on a des situations où on sent que pour nous seuls, c'est trop pesant on a des salles d'entretien spécifique. Quand on est tous les trois dans le bureau, ça arrive très régulièrement qu'on échange sur des situations, parce que on est humain aussi, il y a des choses qui sont dites parfois avec une telle neutralité que parfois, ça ne nous laisse pas de marbre, parce qu'on se dit que la personne ne va vraiment pas bien du tout. Heureusement, la plupart du temps, on arrive souvent à se voir pour parler de tout ça. Et puis, on a aussi ce qu'on appelle des GAP, des groupes d'analyse de pratiques, où il y a des professionnels extérieurs, souvent des psychologues, qui viennent pour échanger avec nous de situations qui soit nous paraissent complexes.
+
+## Est-ce que vu que vous êtes habitué à essayer de chercher s'il y a bien un problème, est ce que ça peut un peu « contaminer » votre vie privée ou est-ce que vous faites bien la séparation ?

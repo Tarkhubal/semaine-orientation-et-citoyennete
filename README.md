@@ -1,2 +1,10 @@
-# soc_2023
- SOC du lycée Vincent Van Gogh
+# OSI2023_siteweb_client
+
+OSI 2023 Site Web IA reconnaissance d'émotions. Interface côté utilisateur
+
+## HOW TO RUN
+
+```python
+python3 -m pip install -r requirements.txt
+python3 main.py
+```

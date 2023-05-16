@@ -1,0 +1,17 @@
+.page .all-buttons a {
+    background-color: #919191;
+    border-color: #707070;
+    border-radius: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 37px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 320px;
+}
+
+.page .all-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

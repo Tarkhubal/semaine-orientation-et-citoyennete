@@ -1,0 +1,152 @@
+:root {
+    --main-bg-color: #343A3B;
+    --main-txt-color: #ffffff;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    display: flex;
+    background-color: #2A2A2A;
+}
+
+.nav-container-left {
+    display: flex;
+    font-family: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    height: 127px;
+    font-size: 18pt;
+    width: 50%;
+}
+
+.nav-container-left img {
+    max-width: 85px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.nav-container-right {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.nav-container-right .links {
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.nav-container-right .links h2 {
+    margin-right: 70px;
+}
+
+a {
+    color: white
+}
+
+
+
+.page_elements {
+    padding: 20px 0px 20px 20px;
+    margin-left: 5vw;
+}
+
+.page-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* box-shadow: 0px 3px 6px black; */
+    margin-top: 25px;
+    margin-right: 5vw;
+    width: 90vw;
+    border-radius: 15px;
+}
+
+.page-title h1 {
+    padding: 0;
+    margin: 0;
+    max-width: 55%;
+    text-shadow: 0px 3px 6px black;
+    font-size: 60pt;
+}
+
+.page-title h2 {
+    padding: 30px 0px 0px 0px;
+    margin: 0 0 30px 0;
+    max-width: 55%;
+    text-shadow: 0px 3px 6px black;
+    font-size: 25px;
+}
+
+.page {
+    display: flex;
+    align-items: flex-end;
+}
+
+.dots {
+    color: #705D5D;
+    text-shadow: 0px 3px 6px black;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.purple {
+    color: purple;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.orange {
+    color: orange;
+}
+
+.pink {
+    color: pink;
+}
+
+.brown {
+    color: brown;
+}
+
+.black {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+.gray {
+    color: gray;
+}
+
+.lightgray {
+    color: lightgray;
+}
+
+.darkgray {
+    color: darkgray;
+}
