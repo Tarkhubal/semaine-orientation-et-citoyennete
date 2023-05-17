@@ -1,0 +1,53 @@
+/* Global Styles */
+.custom_md {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.custom_md > * {
+    padding: 5px 15px 5px 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.custom_md > *:hover {
+    background-color: #474747;
+    transition: 0.2s ease-in-out;
+    border-radius: 5px;
+}
+
+.custom_md h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.custom_md h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    border-top: 3px solid #808080;
+    color: #dadada;
+}
+
+.custom_md h5 {
+    font-size: 16px;
+    color: #777;
+}
+
+.custom_md p {
+    font-size: 17px;
+}
+
+.author {
+    text-align: right;
+}
+
+.author p {
+    font-size: 14px;
+    color: #;
+}

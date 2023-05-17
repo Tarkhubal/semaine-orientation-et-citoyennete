@@ -28,6 +28,7 @@ nav {
     height: 127px;
     font-size: 18pt;
     width: 50%;
+    cursor: pointer;
 }
 
 .nav-container-left img {

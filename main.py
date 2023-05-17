@@ -1,7 +1,7 @@
-import os
-import markdown
+from flask import Flask, render_template, request
+from custom_md_to_html import *
 
-from flask import Flask, render_template, request, redirect, url_for, flash, session
+port = 20011
 
 app = Flask(__name__)
 
@@ -9,9 +9,25 @@ app = Flask(__name__)
 def index():
     return render_template('index.html', title="Accueil", stylesheet='index.css')
 
-@app.route('/presentation')
+@app.route('/faq')
+def faq():
+    return render_template('faq.html', title="FAQ", stylesheet='faq.css')
+
+@app.route('/ressources')
+def ressources():
+    return render_template('ressources.html', title="Ressources", stylesheet='ressources.css')
+
+@app.route('/presentation', methods=['GET'])
 def presentation():
-    return render_template('presentation.html', title='Présentation', stylesheet='presentation.css')
+    files_n_titles = creates_pages()
+    
+    if request.args.get("page") in [file[1] for file in files_n_titles]:
+        file = f'/pages/{[file[0] for file in files_n_titles if file[1] == request.args.get("page")][0]}'
+        return render_template('presentation.html', is_arg=True, title=request.args.get("page"), stylesheet='presentation.css', file_name=file)
+    
+    return render_template('presentation.html', is_arg=False, title='Présentation', stylesheet='presentation.css', files_n_titles=files_n_titles)
+
+
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=port, debug=True)

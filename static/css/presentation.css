@@ -1,17 +1,25 @@
-.page .all-buttons a {
+.page .all-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input[type=submit] {
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
     background-color: #919191;
-    border-color: #707070;
     border-radius: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 37px;
     padding: 20px;
     margin: 10px;
     text-align: center;
-    width: 320px;
+    transition: 0.2s ease-out;
 }
 
-.page .all-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+input[type=submit]:hover {
+    background-color: #5c5c5c;
+    transition: 0.2s ease-in-out;
 }
