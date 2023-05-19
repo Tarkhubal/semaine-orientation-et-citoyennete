@@ -1,17 +1,36 @@
-<link rel="stylesheet" href="static/css/base.css" />
-<link rel="icon" href="static/assets/logo.png" />
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }} | SOC</title>
+    <link rel="icon" type="image/png" href="static/assets/logo.png" />
+    <link rel="stylesheet" href="static/css/base.css">
 
-<nav>
-    <div class="nav-container-left" onclick="window.location.href='/'">
-        <img src="static/assets/logo.png" alt="logo du site"/>
-        <h1>Semaine de l'orientation</h1>
-    </div>
-    <div class="nav-container-right">
-        <div class="links">
-            <a href="/faq"><h2>FAQ</h2></a>
-            <a href="/ressources"><h2>Ressources</h2></a>
-            <a href="/presentation"><h2>Présentation</h2></a>
-            <a href="/"><h2>Accueil</h2></a>
+{% if request.cookies.get('page_theme') == 'dark' %}
+    <link rel="stylesheet" href="static/css/colors_vars_dark.css">
+    <link rel="stylesheet" href="static/css/{{ stylesheet }}.css">
+{% else %}
+    <link rel="stylesheet" href="static/css/colors_vars_light.css">
+    <link rel="stylesheet" href="static/css/{{ stylesheet }}.css">
+{% endif %}
+</head>
+
+<header>
+    <nav>
+        <div class="nav-container-left" onclick="window.location.href='/'">
+            <img src="static/assets/logo.png" alt="logo du site"/>
+            <h1>Semaine de l'orientation</h1>
         </div>
-    </div>
-</nav>
+        <div class="nav-container-right">
+            <div class="links">
+                {% if request.cookies.get('page_theme') == 'dark' %}
+                    <a href="/theme/light"><h2>Change de thème</h2></a>
+                {% else %}
+                    <a href="/theme/dark"><h2>Change de thème</h2></a>
+                {% endif %}
+                <a href="/faq"><h2>FAQ</h2></a>
+                <a href="/ressources"><h2>Ressources</h2></a>
+                <a href="/presentation"><h2>Présentation</h2></a>
+                <a href="/"><h2>Accueil</h2></a>
+            </div>
+        </div>
+    </nav>
+</header>

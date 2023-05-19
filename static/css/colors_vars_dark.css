@@ -1,0 +1,75 @@
+:root {
+    --main-bg-color: #343A3B;
+    --main-txt-color: #ffffff;
+    --main-dots-color: #705D5D;
+
+    --nav-bg-color: #2A2A2A;
+    --nav-link-color: #ffffff;
+
+    --page-titles-shadow: 0px 3px 6px black;
+
+    --custommd-hover-bg-color: #474747;
+    --custommd-border-h2-color: #808080;
+    --custommd-h2-color: #dadada;
+    --custommd-h5-color: #777777;
+
+    --presentation-input-submit-color: #ffffff;
+    --presentation-input-submit-bg-color: #919191;
+    --presentation-input-submit-hover-bg-color: #5c5c5c;
+}
+
+
+
+
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.purple {
+    color: purple;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.orange {
+    color: orange;
+}
+
+.pink {
+    color: pink;
+}
+
+.brown {
+    color: brown;
+}
+
+.black {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+.gray {
+    color: gray;
+}
+
+.lightgray {
+    color: lightgray;
+}
+
+.darkgray {
+    color: darkgray;
+}

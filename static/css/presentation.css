@@ -6,10 +6,10 @@
 
 input[type=submit] {
     border: none;
-    color: #fff;
+    color: var(--presentation-input-submit-color);
     text-decoration: none;
     cursor: pointer;
-    background-color: #919191;
+    background-color: var(--presentation-input-submit-bg-color);
     border-radius: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 37px;
@@ -20,6 +20,6 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #5c5c5c;
+    background-color: var(--presentation-input-submit-hover-bg-color);
     transition: 0.2s ease-in-out;
 }

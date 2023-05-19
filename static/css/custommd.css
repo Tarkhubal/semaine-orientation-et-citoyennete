@@ -14,7 +14,7 @@
 }
 
 .custom_md > *:hover {
-    background-color: #474747;
+    background-color: var(--custommd-hover-bg-color);
     transition: 0.2s ease-in-out;
     border-radius: 5px;
 }
@@ -30,24 +30,15 @@
     font-weight: bold;
     margin-bottom: 10px;
     padding-top: 10px;
-    border-top: 3px solid #808080;
-    color: #dadada;
+    border-top: 3px solid var(--custommd-border-h2-color);
+    color: var(--custommd-h2-color);
 }
 
 .custom_md h5 {
     font-size: 16px;
-    color: #777;
+    color: var(--custommd-h5-color);
 }
 
 .custom_md p {
     font-size: 17px;
-}
-
-.author {
-    text-align: right;
-}
-
-.author p {
-    font-size: 14px;
-    color: #;
 }
