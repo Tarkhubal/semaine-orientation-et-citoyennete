@@ -1,8 +1,8 @@
-# OSI2023_siteweb_client
+# NSi site sur la semaine de l'Orientation
 
-OSI 2023 Site Web IA reconnaissance d'émotions. Interface côté utilisateur
+Projet de NSI
 
-## HOW TO RUN
+## Pour le lancer
 
 ```python
 python3 -m pip install -r requirements.txt
