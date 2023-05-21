@@ -1,4 +1,4 @@
-# NSi site sur la semaine de l'Orientation
+# Site sur la semaine de l'Orientation
 
 Projet de NSI
 
