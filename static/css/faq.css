@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
 
-:root {
-    --title-color: #e4e4e4;
-}
 
 .container {
     margin: 0 auto;
@@ -12,12 +9,12 @@
 }
 
 .accordion .accordion-item {
-    border-bottom: 1px solid var(--title-color);
+    border-bottom: 1px solid var(--faq-title-color);
 }
 
 .accordion .accordion-item button[aria-expanded=true] {
-    border-bottom: 1px solid #03b5d2;
-    background-color: #03b5d2;
+    border-bottom: 1px solid var(--faq-border-button-color);
+    background-color: var(--faq-button-bg-color);
 }
 
 .accordion button {
@@ -26,7 +23,7 @@
     text-align: left;
     width: 100%;
     padding: 1em 0;
-    color: #c4c4c4;
+    color: var(--faq-button-color);
     font-size: 1.15rem;
     font-weight: 400;
     border: none;
@@ -38,14 +35,14 @@
 .accordion button:hover,
 .accordion button:focus {
     cursor: pointer;
-    color: #ffffff;
+    color: var(--faq-button-hover-color);
 }
 
 .accordion button:hover::after,
 .accordion button:focus::after {
     cursor: pointer;
-    color: var(--title-color);
-    border: 1px solid #03b5d2;
+    color: var(--faq-title-color);
+    border: 1px solid var(--faq-button-hover-after-border-color);
 }
 
 .accordion button .accordion-title {
@@ -110,7 +107,7 @@
 }
 
 .accordion button[aria-expanded=true] {
-    color: var(--title-color);
+    color: var(--faq-title-color);
 }
 
 .accordion button[aria-expanded=true] .icon::after {
