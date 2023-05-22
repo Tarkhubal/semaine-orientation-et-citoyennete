@@ -2,6 +2,7 @@
     border-radius: 15px;
     max-width: 55vw;
     max-height: 45vh;
+    
     filter: blur(2px);
 }
 
