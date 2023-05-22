@@ -1,7 +1,7 @@
 :root {
     --main-bg-color: #f8f8fa;
     --main-txt-color: #242424;
-    --main-dots-color: #705D5D;
+    --main-dots-color: #002d61;
 
     --nav-bg-color: #cc3232;
     --nav-link-color: #000000;
@@ -30,11 +30,11 @@
 
 
 .red {
-    color: red;
+    color: #f56b3a;
 }
 
 .blue {
-    color: #428eff;
+    color: #6280c2;
 }
 
 .green {
@@ -46,7 +46,7 @@
 }
 
 .yellow {
-    color: yellow;
+    color: #fdc10a;
 }
 
 .orange {

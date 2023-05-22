@@ -1,9 +1,9 @@
 :root {
-    --main-bg-color: #343A3B;
+    --main-bg-color: #2b2d31;
     --main-txt-color: #ffffff;
-    --main-dots-color: #705D5D;
+    --main-dots-color: #f88f25;
 
-    --nav-bg-color: #2A2A2A;
+    --nav-bg-color: #202020;
     --nav-link-color: #ffffff;
 
     --page-titles-shadow: 0px 3px 6px black;
@@ -30,11 +30,11 @@
 
 
 .red {
-    color: red;
+    color: #f56b3a;
 }
 
 .blue {
-    color: blue;
+    color: #6280c2;
 }
 
 .green {
@@ -46,7 +46,7 @@
 }
 
 .yellow {
-    color: yellow;
+    color: #fdc10a;
 }
 
 .orange {
