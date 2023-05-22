@@ -9,7 +9,11 @@
             <h1><span class="dots">::</span> {{ title }}</h1>
         </div>
         <div class="page">
-            
+            <div class="all-buttons">
+                {% for file in files %}
+                    <a href="{{ file["path"] }}"><input type="submit" value="{{ file["name"] }}" /></a>
+                {% endfor %}
+            </div>
         </div>
     </div>
 

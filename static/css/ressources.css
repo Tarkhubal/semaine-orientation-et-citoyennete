@@ -1,0 +1,25 @@
+.page .all-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input {
+    border: none;
+    color: var(--presentation-input-submit-color);
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--presentation-input-submit-bg-color);
+    border-radius: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 37px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: 0.2s ease-out;
+}
+
+input:hover {
+    background-color: var(--presentation-input-submit-hover-bg-color);
+    transition: 0.2s ease-in-out;
+}

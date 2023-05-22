@@ -1,9 +1,14 @@
 /* Global Styles */
+
+:root {
+    --customdel-max-width: 45vw;
+}
+
 .custom_md {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    max-width: 800px;
+    max-width: var(--customdel-max-width);
     margin: 0 auto;
     padding: 20px;
 }
@@ -39,6 +44,17 @@
     color: var(--custommd-h5-color);
 }
 
+.custom_md img {
+    max-width: var(--customdel-max-width);
+    max-height: var(--customdel-max-width);
+    margin-bottom: 0;
+}
+
 .custom_md p {
     font-size: 17px;
+}
+
+.custom_md .img_sub {
+    font-size: 13px;
+    margin-top: 2px;
 }

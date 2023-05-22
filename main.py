@@ -1,9 +1,32 @@
+import os
+
 from flask import Flask, render_template, request, redirect
 from custom_md_to_html import *
 
 port = 20011
 
 app = Flask(__name__)
+
+global files
+files = []
+
+def explore_path(path: str):
+    global files
+    if os.path.isfile(path):
+        items = path.split("/")
+        files.append({"path": path, "name": items[len(items)-1]})
+        return files
+    else:
+        for item in os.listdir(path):
+            if os.path.isfile(os.path.join(path, item)):
+                files.append({"path": os.path.join(path, item), "name": item})
+                continue
+            elif os.path.isdir(os.path.join(path, item)):
+                explore_path(path = os.path.join(path, item))
+            else:
+                print("   Error : Can't load", item, "from", path)
+    
+    return files
 
 @app.route('/')
 def index():
@@ -21,7 +44,11 @@ def faq():
 
 @app.route('/ressources')
 def ressources():
-    return render_template('ressources.html', title="Ressources", stylesheet='ressources')
+    global files
+    files = [   ]
+    explore_path(os.path.join("static", "ressources"))
+    
+    return render_template('ressources.html', title="Ressources", stylesheet='ressources', files=files)
 
 @app.route('/presentation', methods=['GET'])
 def presentation():

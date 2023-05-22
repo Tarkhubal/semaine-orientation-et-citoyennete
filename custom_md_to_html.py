@@ -31,7 +31,7 @@ def custom_md_to_html(md_link: str):
         elif line.startswith("img:["):
             img, alt = line[5:-2].split("]{")
             html += f"<img src='/{img}' alt='Image de : {alt}'>"
-            html += f"<p class='img_sub'>{alt}</p>"
+            html += f"<p class='img_sub'>\u2014\u0020{alt}</p>"
             continue
         
         elif line.startswith("link:["):
