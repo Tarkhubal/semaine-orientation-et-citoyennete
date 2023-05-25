@@ -2,7 +2,6 @@
     border-radius: 15px;
     max-width: 55vw;
     max-height: 45vh;
-    
     filter: blur(2px);
 }
 
@@ -12,4 +11,9 @@
     border-radius: 15px;
     /* text-align: right; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page_elements p,
+.page_elements h1 {
+    font-family: 'Calibri';
 }
