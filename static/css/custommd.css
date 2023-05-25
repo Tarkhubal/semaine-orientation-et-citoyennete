@@ -16,6 +16,7 @@
 .custom_md > * {
     padding: 5px 15px 5px 15px;
     transition: 0.2s ease-in-out;
+    text-align: justify;
 }
 
 .custom_md > *:hover {
@@ -57,4 +58,21 @@
 .custom_md .img_sub {
     font-size: 13px;
     margin-top: 2px;
+}
+
+.return {
+    margin-right: 4vw;
+    padding: 1vw;
+    cursor: pointer;
+    font-size: 15pt;
+    background-color: var(--presentation-input-submit-bg-color);
+    border-radius: 8px;
+    color: var(--main-txt-color);
+    page-break-after: always;
+    transition: all 0.5s ease;
+}
+
+.return:hover {
+    transform: translateY(-15px);
+    background-color: var(--presentation-input-submit-hover-bg-color);
 }

@@ -49,6 +49,22 @@ nav {
 
 .nav-container-right .links h2 {
     margin-right: 70px;
+    text-decoration: underline;
+}
+
+.nav-container-right .links > a {
+    text-decoration: none;
+}
+
+.nav-container-right .links h2,
+.nav-container-right .links a {
+    transition: all 0.2s ease;
+}
+
+.nav-container-right .links a:hover h2,
+.nav-container-right .links a:hover {
+    color: var(--custommd-border-h2-color);
+    text-decoration: none;
 }
 
 a {
