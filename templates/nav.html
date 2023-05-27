@@ -1,5 +1,6 @@
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title }} | SOC</title>
     <link rel="icon" type="image/png" href="static/assets/logo.png" />
     <link rel="stylesheet" href="static/css/base.css">
@@ -15,10 +16,22 @@
 
 <header>
     <nav>
-        <div class="nav-container-left" onclick="window.location.href='/'">
+        <!-- <div class="nav-container-left" onclick="window.location.href='/'">
             <img src="static/assets/logo.png" alt="logo du site"/>
             <h1>Semaine de l'orientation</h1>
         </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+        </ul>
+
         <div class="nav-container-right">
             <div class="links">
                 {% if request.cookies.get('page_theme') == 'dark' %}
@@ -30,6 +43,24 @@
                 <a href="/ressources"><h2>Ressources</h2></a>
                 <a href="/presentation"><h2>Présentation</h2></a>
             </div>
+        </div> -->
+        <div class="nav-container-left" onclick="window.location.href='/'">
+            <img src="static/assets/logo.png" alt="logo du site"/>
+            <h1>Semaine de l'orientation</h1>
         </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            {% if request.cookies.get('page_theme') == 'dark' %}
+                <li><a href="/theme/light">Change de thème</a></li>
+            {% else %}
+                <li><a href="/theme/dark">Change de thème</a></li>
+            {% endif %}
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/ressources">Ressources</a></li>
+            <li><a href="/presentation">Présentation</a></li>
+        </ul>
     </nav>
 </header>
