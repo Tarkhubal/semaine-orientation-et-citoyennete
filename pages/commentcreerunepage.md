@@ -1,5 +1,6 @@
-# Tuto MarkDown Custom
-
+# Comment créer une page
+## Intro
+Pour créer une page, il vous faudra maîtriser la MarkDown. Ne vous Inquiétez pas, c'est très simple :
 Le MarkDown, c'est une langage de programmation simple, utilisant une synthaxe la plus simpliste possible pour rendre un document (une page généralement) agréable à lire, tout en étant le plus fonctionnel possible. Nous avons utilisé une version de Markdown basique que nous avons modifié afin de pouvoir l'utiliser pour créer des pages Web dans un style pré-conçu.
 ## Première partie : Gestion des fichiers
 Afin de respecter une cohérence (et que le programme qui exécute le MarkDown puisse chercher les fichiers au bon endroit) dans la structure des fichiers, voici comment doit être structuré les éléments que vous souhaitez ajouter :
