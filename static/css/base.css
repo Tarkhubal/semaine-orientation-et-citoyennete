@@ -100,7 +100,7 @@ nav {
 
 .nav-container-left img {
     max-width: 85px;
-    margin-left: 22px;
+    margin-left: 10px;
     margin-right: 22px;
 }
 
@@ -109,20 +109,20 @@ nav {
     flex-direction: row;
     list-style-type: none;
     margin: 0;
-    padding: 0 5% 0 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 3% 0 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     align-items: center;
     text-align: center;
 }
 
 .menu > li {
-    margin: 0 1rem;
+    margin: 0;
     overflow: hidden;
 }
 
 .menu > li > a {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     font-size: 1.5rem;
     font-weight: 400;
     color: #fff;
@@ -184,7 +184,7 @@ nav {
     transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1230px) {
     :root {
         --nav-height: 50px
     }

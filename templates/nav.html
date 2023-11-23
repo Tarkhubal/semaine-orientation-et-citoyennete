@@ -20,18 +20,6 @@
             <img src="static/assets/logo.png" alt="logo du site"/>
             <h1>Semaine de l'orientation</h1>
         </div>
-        <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-        </label>
-        <ul class="menu">
-            <li>One</li>
-            <li>Two</li>
-            <li>Three</li>
-            <li>Four</li>
-            <li>Five</li>
-        </ul>
-
         <div class="nav-container-right">
             <div class="links">
                 {% if request.cookies.get('page_theme') == 'dark' %}
@@ -44,6 +32,7 @@
                 <a href="/presentation"><h2>Présentation</h2></a>
             </div>
         </div> -->
+        
         <div class="nav-container-left" onclick="window.location.href='/'">
             <img src="static/assets/logo.png" alt="logo du site"/>
             <h1>Semaine de l'orientation</h1>
