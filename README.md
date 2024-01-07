@@ -1,6 +1,6 @@
 # Site sur la semaine de l'Orientation
 
-Petit site web pour présenter la semaine de l'Orientation et de la Citoyenneté du Lycée Polyvalent Vincent Van Gogh de 2023
+Petit site web pour présenter la semaine de l'Orientation et de la Citoyenneté du Lycée Polyvalent Vincent Van Gogh de 2023.
 Réalisé avec Flask.
 
 ## Pour le lancer
