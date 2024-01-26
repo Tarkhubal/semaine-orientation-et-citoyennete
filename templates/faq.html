@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
+{% extends "/base.html" %}
 
-{% include 'nav.html' %}
-
-<body>
+{% block content %}
     <div class="page_elements">
         <div class="page-title">
             <h1><span class="dots">::</span> {{ title }}</h1>
@@ -47,5 +44,4 @@
         <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
         <script src="static/js/faq.js"></script>
     </div>
-</body>
-</html>
+{% endblock %}

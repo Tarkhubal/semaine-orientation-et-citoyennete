@@ -42,14 +42,21 @@
             <div class='menu-button'></div>
         </label>
         <ul class="menu">
+            <li><a 
             {% if request.cookies.get('page_theme') == 'dark' %}
-                <li><a href="/theme/light">Change de thème</a></li>
+                href="/theme/light"
             {% else %}
-                <li><a href="/theme/dark">Change de thème</a></li>
+                href="/theme/dark"
             {% endif %}
+               >Changer de thème</a></li>
             <li><a href="/faq">FAQ</a></li>
             <li><a href="/ressources">Ressources</a></li>
             <li><a href="/presentation">Présentation</a></li>
         </ul>
     </nav>
 </header>
+
+<body>
+    {% block content %}
+    {% endblock %}
+</body>

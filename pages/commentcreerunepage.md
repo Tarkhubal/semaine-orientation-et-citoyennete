@@ -1,6 +1,6 @@
 # Comment créer une page
 ## Intro
-Pour créer une page, il vous faudra maîtriser la MarkDown. Ne vous Inquiétez pas, c'est très simple :
+Pour créer une page, il vous faudra maîtriser un genre de langage MarkDown, qui permet de faire de belles présentations. Ne vous inquiétez pas, c'est très simple :
 Le MarkDown, c'est une langage de programmation simple, utilisant une synthaxe la plus simpliste possible pour rendre un document (une page généralement) agréable à lire, tout en étant le plus fonctionnel possible. Nous avons utilisé une version de Markdown basique que nous avons modifié afin de pouvoir l'utiliser pour créer des pages Web dans un style pré-conçu.
 ## Première partie : Gestion des fichiers
 Afin de respecter une cohérence (et que le programme qui exécute le MarkDown puisse chercher les fichiers au bon endroit) dans la structure des fichiers, voici comment doit être structuré les éléments que vous souhaitez ajouter :
@@ -40,6 +40,6 @@ Voici quelques mises en forme que nous avons ajouté, mais qui sont plus complex
 Vous pouvez :color:blue::-mettre du texte en couleur-:color en entourant le texte par ":color/:couleur:/:-" en mettant votre couleur en anglais à la place de "couleur" au début et finir par "-:/color", exemple :color/:blue:/:-Mon texte en bleu-:/color et :color:red::-ici en rouge-:color
 Il n'y a pas toutes les couleurs disponibles mais une très grande partie quand même. Si quand vous rechargez la page, votre texte ne change pas de couleur, alors la couleur que vous avez choisi n'est pas disponible.
 
-Vous pouvez également "additionner" plusieurs mises en formes, quelques exemples : **- ==- ~~-Mon texte en gras, barré et surligné-== -~~ -** ou encore _-^^-Mon texte en italique et exposant-^^-_ : c'est assez complexe parce que parfois il faut respecter une certaine hiérarchie, mais en général ça marche dans n'importe quel sens. Par exemple le surlignage doit toujours être au plus proche du texte (avec le moins d'espaces possibles), par exemple il doit être comme cela : **/- ==/-Mon texte surligné-/== -/** et non pas comme cela : ==/- **/- Mon texte surligné -/** -/==
+Vous pouvez également "additionner" plusieurs mises en formes, quelques exemples : **- ==- ~~-Mon texte en gras, barré et surligné-== -~~ -** ou encore _-^^-Mon texte en italique et exposant-^^-_ : c'est assez complexe parce que parfois il faut respecter une certaine hiérarchie, mais en général ça marche dans n'importe quel sens. Par exemple le surlignage doit toujours être au plus proche du texte (avec le moins d'espaces possibles), il doit être comme cela : **/- ==/-Mon texte surligné-/== -/** et non pas comme cela : ==/- **/- Mon texte surligné -/** -/==
 Autre information : il ne faut pas hésiter à mettre des espaces entre les mises en forme, par exemple : ```- **/- ==/- Mon texte surligné -/== -/** -```
 Il peut être parfois nécessaire de faire plusieurs tests pour trouver la bonne composition
