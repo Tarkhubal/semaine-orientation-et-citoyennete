@@ -108,9 +108,16 @@ colors = {
     "yellowgreen": "#9acd32"
 }
 
-def custom_md_to_html(md_link: str):
-    """Converts a markdown file into HTML and returns it as a string and the title of the page."""
-    md_lines = open(md_link, "r", encoding="utf-8").readlines()
+def custom_md_to_html(md_link: str = None, string: str = None):
+    """Converts a custom markdown file into HTML and returns it as a string and also get the title of the page."""
+    md_lines = []
+    if md_link is not None:
+        md_lines = open(md_link, "r", encoding="utf-8").readlines()
+    else:
+        for line in string.split("\n"):
+            md_lines.append(line + "\n")
+            # print(line)
+    
     html = ""
     global colors
     
@@ -144,7 +151,10 @@ def custom_md_to_html(md_link: str):
         
         elif line.startswith("img:["):
             img, alt = line[5:-2].split("]{")
-            html += f"<img src='/{img}' alt='Image de : {alt}'>"
+            if not img.startswith("/") and not img.startswith("http"):
+                img = f"/{img}"
+
+            html += f"<img src='{img}' alt='Image de : {alt}'>"
             html += f"<p class='img_sub'>\u2014\u0020{alt}</p>"
             continue
         

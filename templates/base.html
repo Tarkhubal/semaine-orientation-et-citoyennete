@@ -2,22 +2,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title }} | SOC</title>
-    <link rel="icon" type="image/png" href="static/assets/logo.png" />
-    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="icon" type="image/png" href="/static/assets/logo.png" />
+    <link rel="stylesheet" href="/static/css/base.css">
 
 {% if request.cookies.get('page_theme') == 'dark' %}
-    <link rel="stylesheet" href="static/css/colors_vars_dark.css">
-    <link rel="stylesheet" href="static/css/{{ stylesheet }}.css">
+    <link rel="stylesheet" href="/static/css/colors_vars_dark.css">
+    <link rel="stylesheet" href="/static/css/{{ stylesheet }}.css">
 {% else %}
-    <link rel="stylesheet" href="static/css/colors_vars_light.css">
-    <link rel="stylesheet" href="static/css/{{ stylesheet }}.css">
+    <link rel="stylesheet" href="/static/css/colors_vars_light.css">
+    <link rel="stylesheet" href="/static/css/{{ stylesheet }}.css">
 {% endif %}
 </head>
 
 <header>
     <nav>
         <!-- <div class="nav-container-left" onclick="window.location.href='/'">
-            <img src="static/assets/logo.png" alt="logo du site"/>
+            <img src="/static/assets/logo.png" alt="logo du site"/>
             <h1>Semaine de l'orientation</h1>
         </div>
         <div class="nav-container-right">
@@ -34,7 +34,7 @@
         </div> -->
         
         <div class="nav-container-left" onclick="window.location.href='/'">
-            <img src="static/assets/logo.png" alt="logo du site"/>
+            <img src="/static/assets/logo.png" alt="logo du site"/>
             <h1>Semaine de l'orientation</h1>
         </div>
         <input id="menu-toggle" type="checkbox" />

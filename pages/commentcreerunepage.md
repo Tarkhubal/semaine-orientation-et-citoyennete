@@ -3,8 +3,8 @@
 Pour créer une page, il vous faudra maîtriser un genre de langage MarkDown, qui permet de faire de belles présentations. Ne vous inquiétez pas, c'est très simple :
 Le MarkDown, c'est une langage de programmation simple, utilisant une synthaxe la plus simpliste possible pour rendre un document (une page généralement) agréable à lire, tout en étant le plus fonctionnel possible. Nous avons utilisé une version de Markdown basique que nous avons modifié afin de pouvoir l'utiliser pour créer des pages Web dans un style pré-conçu.
 ## Première partie : Gestion des fichiers
-Afin de respecter une cohérence (et que le programme qui exécute le MarkDown puisse chercher les fichiers au bon endroit) dans la structure des fichiers, voici comment doit être structuré les éléments que vous souhaitez ajouter :
-Les pages en MarkDown (qui peuvent être aussi bien des fichiers type "mapage.md" ou "monfichier.txt" (en gros le fichier doit soit être un document texte soit un document MarkDown (finissant par .md))) doivent être placées dans le dossier /pages
+Afin de respecter une cohérence (et que le site puisse chercher les fichiers au bon endroit) dans les dossiers, voici comment doit être structuré les éléments que vous souhaitez ajouter :
+Les pages en MarkDown (qui peuvent être aussi bien des fichiers comme "mapage.md" ou "monfichier.txt" (en gros le fichier doit soit être un document texte soit un document MarkDown (finissant par .md))) doivent être placées dans le dossier /pages
 Les images doivent quand à elles être placées dans le dossier /static, elles peuvent être partout ça n'a pas d'importance, tant qu'elles sont dans ce dossier précisément. Si elles ne sont pas mises dans ce dossier, le site n'y aura pas accès ! Pour implémenter les images dans les pages, on verra plus bas comment faire
 
 ## Deuxième partie : Synthaxe
@@ -13,7 +13,7 @@ Pour créer le titre de la page (nécessaire et UNIQUE) il suffit de commencer l
 Vous pouvez créer des titres plus petits, il suffit de rajouter plusieurs # : par exemple "## Mon titre 2" sera plus petit que le titre de la page, et "### Mon titre 3" sera ENCORE plus petit. Vous pouvez pour l'instant jusqu'à la taille "##### Mon titre 5", qui sera vraiment tout petit (il peut être utile en remerciements de bas de page par exemple).
 
 Vous pouvez également rajouter des liens et des images :
-Pour ajouter des images, vous devez commencer votre ligne par "img:", le programme détectera alors une image. La suite devra être organisée sous cette forme : ":color:crimson::-```-img:[static/mon/lien/vers/l'image]{Ma description de l'image qui apparaitra en dessous}-:color-```". Il pourra également être un lien vers une autre page HTML (que je déconseille parce que si le site supprime l'image elle n'existera plus) : "img:[https://exemple.com/mon_image.png]{Mon sous-titre/description de l'image}"
+Pour ajouter des images, vous devez commencer votre ligne par "img:", le programme détectera alors une image. La suite devra être organisée sous cette forme : ":color:crimson::-```-img:[static/mon/lien/vers/l'image]{Ma description de l'image qui apparaitra en dessous}-:color-```". Il pourra également être un lien vers une autre page HTML (que je déconseille parce que si le site d'où vient l'image supprime l'image elle n'existera plus) : "img:[https://exemple.com/mon_image.png]{Mon sous-titre/description de l'image}"
 Les liens peuvent être ajoutés de la même façon que les images, il suffit simplement de commencer la ligne par "link:" au lieu de "img:", exemple : "link:[https://exemple.com]{Texte affiché à la place du lien}"
 
 ## Troisième partie : Paragraphes et sauts de ligne

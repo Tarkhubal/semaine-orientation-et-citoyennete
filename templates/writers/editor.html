@@ -1,0 +1,55 @@
+{% extends "/base.html" %}
+
+{% block content %}
+
+<div class="page_elements">
+    <div class="page-title">
+        <h1><span class="dots">::</span> {{ title }}</h1>
+    </div>
+    <div class="page">
+
+        <div class="editor">
+            <div class="writing-area">
+                <textarea id="writing-textarea" name="writing-textarea" rows="35" cols="100" oninput="changeText()">
+# Hey !
+Ecrivez votre page ici, et vous pourrez avoir un aperçu sur la droite. Quand vous pensez avoir fini, cliquez sur le bouton sauvegarder ! (C'est très important)</textarea>
+            </div>
+            <div class="preview-area">
+                <div id="result-container" class="custom_md">
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            textarea = document.getElementById("writing-textarea");
+
+            function changeText() {
+                var xmlHttp = new XMLHttpRequest();
+                console.log(textarea.value);
+
+                xmlHttp.open("POST", "/api/v1/custom_md/to_html", true);
+                xmlHttp.setRequestHeader('Content-Type', 'application/json');
+
+                xmlHttp.onreadystatechange = function () {
+                    if (xmlHttp.readyState === 4) {
+                        if (xmlHttp.status === 200) {
+                            // Traitement de la réponse ici
+                            var response = JSON.parse(xmlHttp.responseText);
+                            // Mettez à jour le contenu de la page avec la réponse
+                            document.getElementById("result-container").innerHTML = response.data;
+                        } else {
+                            // Gestion des erreurs ici
+                            console.error("Erreur de requête: " + xmlHttp.status);
+                        }
+                    }
+                };
+
+                xmlHttp.send(JSON.stringify({ "text": textarea.value }));
+            }
+
+        </script>
+
+    </div>
+</div>
+{% endblock content %}
