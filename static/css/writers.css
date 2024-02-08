@@ -1,8 +1,45 @@
 .editor {
     display: flex;
     max-width: 100%;
+    margin-top: 150px;
 }
 
+.absolute {
+    position: absolute;
+    z-index: 200000;
+}
+
+.load-page-choose {
+    display: none;
+    z-index: -100;
+    max-width: 360px;
+    flex-direction: column;
+    opacity: 0;
+    top: 245px;
+    left: 910px;
+    background-color: var(--custommd-hover-bg-color);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 2em var(--main-dots-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.load-page-choose h2 {
+    margin-top: 0;
+}
+
+.load-page-choose .choose-close {
+    margin-top: 30px;
+    align-self: flex-end;
+}
+
+.load-page-choose button,
+.load-page-choose .elements > * {
+    color: white;
+    padding: 12px;
+    width: max-content;
+    margin: 2px 3px;
+}
 
 /* Global Styles */
 
@@ -50,11 +87,7 @@
     border: none;
     display: block;
     text-decoration: none;
-}
-
-.return:hover {
-    transform: translateY(-15px);
-    background-color: var(--presentation-input-submit-hover-bg-color);
+    margin-right: 4vw;
 }
 
 code {
@@ -104,8 +137,8 @@ code {
         margin-top: 2px;
     }
     
-    .return {
-        margin-right: 4vw;
+    .return,
+    .editor-inside-button {
         padding: 1vw;
         font-size: 15pt;
         border-radius: 8px;
@@ -154,11 +187,108 @@ code {
         margin-top: 2px;
     }
 
-    .return {
-        margin-right: 4vw;
+    .return,
+    .editor-inside-button {
         padding: 1vw;
         font-size: 15pt;
         border-radius: 8px;
     }
 }
 
+.editor-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.editor-buttons > * {
+    height: 25%;
+    width: 30%;
+    margin: auto;
+}
+
+.editor-button {
+    transition: all 0.2s ease;
+    height: 25%;
+    width: 30%;
+    margin: 0;
+    text-align: center;
+    background-color: #404040;
+    border: 1px solid var(--custommd-border-h2-color);
+    border-radius: 50px;
+}
+
+.editor-button:hover {
+    transform: scale(0.97);
+    background-color: var(--main-dots-color);
+    box-shadow: 0 0 1em var(--main-dots-color);
+    cursor: pointer;
+}
+
+
+textarea {
+    border-radius: 8px;
+    background-color: #404040;
+    color: white;
+    border: 1px solid var(--custommd-border-h2-color);
+}
+
+textarea:focus-visible,
+.pass-form input[type="password"] {
+    outline: none;
+}
+
+#index-writers-pass {
+    height: 20vh;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pass-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #404040;
+}
+
+.pass-form label[for="pswd"] {
+    font-size: 24pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pass-form input[type="password"] {
+    font-size: 18pt;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.pass-form input[type="submit"] {
+    border: none;
+    background-color: #efefef;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.page-title {
+    position: fixed;
+}
+
+.writing-area {
+    height: min-content;
+    position: fixed;
+}
+
+.preview-area {
+    margin-left: 45%
+}

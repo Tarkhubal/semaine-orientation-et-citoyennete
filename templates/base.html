@@ -1,9 +1,12 @@
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ title }} | SOC</title>
     <link rel="icon" type="image/png" href="/static/assets/logo.png" />
-    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/base.css" />
 
 {% if request.cookies.get('page_theme') == 'dark' %}
     <link rel="stylesheet" href="/static/css/colors_vars_dark.css">
@@ -60,3 +63,5 @@
     {% block content %}
     {% endblock %}
 </body>
+
+</html>

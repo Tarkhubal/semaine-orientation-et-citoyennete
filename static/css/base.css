@@ -1,9 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
+
 html {
     margin: 0;
     padding: 0;
 }
-
-@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
 
 body {
     background-color: var(--main-bg-color);

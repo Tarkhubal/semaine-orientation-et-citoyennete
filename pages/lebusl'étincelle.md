@@ -1,14 +1,16 @@
 # Le bus l'étincelle
 
-C’est durant sa semaine de la citoyenneté que le lycée Vincent van Gogh a reçu de nombreux intervenant venus pour sensibiliser les élèves et professeurs sur de nombreux sujets. Parmi eux, l’association du Bus L’Etincelle a pu intervenir auprès des classes sur le sujet des violences sexuelles. Cette association est une association publique d’écoute pour les personnes victimes de violences sexuelles. Elle a la particularité de posséder des bureaux mobiles et ont placés leurs salle d’écoute à l’intérieur d’un véhicule adapté, ce qui valorise l’aide aux victimes qui n’ont pas toujours la possibilité de se déplacer loin de leurs foyer.
+C’est durant sa semaine de la citoyenneté que le lycée Vincent van Gogh a reçu de nombreux intervenants venus pour sensibiliser les élèves et professeurs sur de nombreux sujets. Parmi eux, l’association du Bus L’Etincelle a pu intervenir auprès des classes sur le sujet des violences sexuelles. Cette association est une association publique d’écoute pour les personnes victimes de violences sexuelles. Elle a la particularité de posséder des bureaux mobiles et ont placés leurs salle d’écoute à l’intérieur d’un véhicule adapté, ce qui valorise l’aide aux victimes qui n’ont pas toujours la possibilité de se déplacer loin de leurs foyer.
 
 img:[static/assets/img/wallhaven-4gwo8d.jpg]{Façade extérieure du Bus L’Etincelle}
 img:[static/assets/img/wallhaven-kx82d6.png]{Intérieur du Bus L’Etincelle}
 
 L’intervention s’est ainsi déroulée dans l’amphithéâtre de l’établissement. Durant l’intervention, les 3 intervenants Claire, François et Sébastien ont pu échanger avec les élèves présents. L’intervention a abordé le thème de la violence sexuelle, des violences administratives, du rapport de l’enfants aux violences etc.
 
-<<-- img:[static/assets/img/laclasse.jpg]{Intervention dans l’amphithéâtre du lycée Vincent Van Gogh}
-<<-- img:[static/assets/img/violence_conjuguale.jpg]{Présentation du cycle de la violence conjugale}
+<<--
+img:[static/assets/img/laclasse.jpg]{Intervention dans l’amphithéâtre du lycée Vincent Van Gogh}
+img:[static/assets/img/violence_conjuguale.jpg]{Présentation du cycle de la violence conjugale}
+-->>
 
 À la suite de l'intervention nous avons interviewé Sébastien Garnier, l’un des trois travailleurs sociaux. Il a rejoint l’équipe du projet en mai 2022, sur la fin de création du projet. Il était à l'époque en reconversion professionnelle (Il était à la base juriste de formation et préparait le concours de police). Son rôle est de recevoir des femmes en entretien et d’être parfois leurs première écoute
 

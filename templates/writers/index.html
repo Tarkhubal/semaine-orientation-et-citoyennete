@@ -6,15 +6,13 @@
     <div class="page-title">
         <h1><span class="dots">::</span> {{ title }}</h1>
     </div>
-    <div class="page">
-
-<form method="get" action="/api/v1/writers/check_pass">
-    <label for="pswd">Enter your password: </label>
-    <input type="password" id="pswd" name="pswd">
-    <input type="submit" value="Submit"/>
-</form>
-
-
-</div>
+    <div class="page" id="index-writers-pass">
+        <form method="get" action="/api/v1/writers/check_pass" class="pass-form">
+            <label for="pswd">Entrez le mot de passe : </label>
+            <input type="password" id="pswd" name="pswd">
+            <input type="submit" class="editor-button" value="Submit"/>
+        </form>
+    
+    </div>
 </div>
 {% endblock content%}

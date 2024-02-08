@@ -7,28 +7,184 @@
         <h1><span class="dots">::</span> {{ title }}</h1>
     </div>
     <div class="page">
+        
+        <div class="absolute load-page-choose" id="choose-div">
+            <h2>Sélectionnez la page à modifier</h2>
+            <div class="elements">
+                <!-- Set all pages buttons here -->
+            </div>
+            <button class="choose-close editor-button" value="close" onclick="closeChooseDiv()">Fermer la fenêtre</div>
+        </div>
 
         <div class="editor">
             <div class="writing-area">
-                <textarea id="writing-textarea" name="writing-textarea" rows="35" cols="100" oninput="changeText()">
+                <textarea id="writing-textarea" name="writing-textarea" rows="35" cols="100">
 # Hey !
 Ecrivez votre page ici, et vous pourrez avoir un aperçu sur la droite. Quand vous pensez avoir fini, cliquez sur le bouton sauvegarder ! (C'est très important)</textarea>
+
+                <div class="editor-buttons">
+                    <div id="new-page" class="editor-button">
+                        <div onclick="newPage()" class="editor-inside-button">
+                            Nouvelle page
+                        </div>
+                    </div>
+
+                    <div id="load-data" class="editor-button">
+                        <div onclick="openChooseDiv()" class="editor-inside-button">
+                            Charger une page
+                        </div>
+                    </div>
+                    
+                    <div id="save-page" class="editor-button">
+                        <div onclick="saveText()" class="editor-inside-button">
+                            Sauvegarder
+                        </div>
+                    </div>
+
+                    <!--<div id="save-page" class="editor-button">
+                        <div onclick="deletePage()" class="editor-inside-button">
+                            Supprimer la page
+                        </div>
+                    </div>-->
+                </div>
+                
             </div>
             <div class="preview-area">
-                <div id="result-container" class="custom_md">
-                </div>
-
+                <div id="result-container" class="custom_md"></div>
             </div>
         </div>
 
+
+
         <script>
             textarea = document.getElementById("writing-textarea");
+            choosediv = document.getElementById("choose-div");
+
+            function newPage() {
+                textarea.value = "# Nouvelle page"
+            }
+
+            function setAllPagesButtons() {
+                url = "/api/v1/custom_md/get/all_pages"
+                /* Example response :
+                {
+                    "data": [
+                        {
+                            "title": "Title 1",
+                            "content": "Page 1"
+                        },
+                        {
+                            "title": "Title 2",
+                            "content": "Page 2"
+                        }
+                    ]
+                }
+                */
+
+                fetch(url, {
+                    method: 'get', // Default is 'get'
+                    mode: "cors",
+                    credentials: "same-origin",
+                    headers: new Headers({
+                        'Content-Type': 'application/json'
+                    })
+                }).catch(function(err) {
+                    console.error("Erreur de requête : " + err);
+                }).then(function(response) {
+                    return response.json();
+                }).then(function(response) {
+                    var elements = document.getElementsByClassName("elements")[0];
+                    elements.innerHTML = "";
+                    var data = response.data.data;
+
+                    for (var i = 0; i < data.length; i++) {
+                        var page = data[i];
+                        // console.log(page);
+                        var button = document.createElement("button");
+                        button.innerHTML = page.title;
+                        // console.log(page.title);
+                        button.setAttribute( "onClick", `javascript: loadContent("${page.title}");` );
+                        button.setAttribute( "class", "editor-button")
+                        elements.appendChild(button);
+                        // console.log(page);
+                    }
+                });
+            }
+
+            function loadContent(pageName) {
+                url = "/api/v1/custom_md/get"
+                console.log(`Getting some data for ${pageName}`)
+                fetch(url, {
+                    method: 'post', // Default is 'get'
+                    body: JSON.stringify({ "title": pageName }),
+                    mode: "cors",
+                    credentials: "same-origin",
+                    headers: new Headers({
+                        'Content-Type': 'application/json'
+                    })
+                }).catch(function(err) {
+                    console.error("Erreur de requête : " + err);
+                }).then(function(response) {
+                    return response.json();
+                }).then(function(response) {
+                    // console.log(`Response : ${response.content}`);
+                    textarea.value = response.content;
+                    closeChooseDiv()
+                });
+            }
+
+            setAllPagesButtons();
+
+            function closeChooseDiv() {
+                choosediv.style.display = "none";
+                choosediv.style.zIndex = "-100";
+                choosediv.style.opacity = "0"
+            }
+
+            function openChooseDiv() {
+                choosediv.style.display = "flex";
+                choosediv.style.zIndex = "200";
+                choosediv.style.opacity = "1"
+            }
+
+            lastData = textarea.value
 
             function changeText() {
-                var xmlHttp = new XMLHttpRequest();
-                console.log(textarea.value);
+                if (lastData === textarea.value) {
+                    // console.log("Content not modified")
+                } else {
+                    url = "/api/v1/custom_md/to_html"
+                    // console.log("Content modified")
+                    fetch(url, {
+                        method: 'post', // Default is 'get'
+                        body: JSON.stringify({ "text": textarea.value }),
+                        mode: "cors",
+                        credentials: "same-origin",
+                        headers: new Headers({
+                            'Content-Type': 'application/json'
+                        })
+                    }).catch(function(err) {
+                        console.error("Erreur de requête : " + err);
+                    }).then(function(response) {
+                        return response.json();
+                    }).then(function(response) {
+                        document.getElementById("result-container").innerHTML = response.data;
+                    });
+                };
+                // console.log(lastData)
+                lastData = textarea.value
+                // console.log(textarea.value)
+                setTimeout(changeText, 2000);
+            }
 
-                xmlHttp.open("POST", "/api/v1/custom_md/to_html", true);
+            changeText();
+
+
+            function saveText() {
+                var xmlHttp = new XMLHttpRequest();
+                // console.log(textarea.value);
+
+                xmlHttp.open("POST", "/api/v1/custom_md/save", true);
                 xmlHttp.setRequestHeader('Content-Type', 'application/json');
 
                 xmlHttp.onreadystatechange = function () {
@@ -36,8 +192,6 @@ Ecrivez votre page ici, et vous pourrez avoir un aperçu sur la droite. Quand vo
                         if (xmlHttp.status === 200) {
                             // Traitement de la réponse ici
                             var response = JSON.parse(xmlHttp.responseText);
-                            // Mettez à jour le contenu de la page avec la réponse
-                            document.getElementById("result-container").innerHTML = response.data;
                         } else {
                             // Gestion des erreurs ici
                             console.error("Erreur de requête: " + xmlHttp.status);
@@ -46,8 +200,9 @@ Ecrivez votre page ici, et vous pourrez avoir un aperçu sur la droite. Quand vo
                 };
 
                 xmlHttp.send(JSON.stringify({ "text": textarea.value }));
-            }
 
+                setAllPagesButtons();
+            }
         </script>
 
     </div>
